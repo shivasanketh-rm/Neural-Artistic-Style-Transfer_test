@@ -66,7 +66,7 @@ def add_style_loss(vgg,style_image_path,vgg_layers,vgg_output_dict,img_width, im
     style_img = img_util.preprocess_image(style_image_path, img_width, img_height)
     print('Getting style features from VGG network.')
 
-    style_layers = ['block1_conv2', 'block2_conv2', 'block3_conv3', 'block4_conv3']
+    style_layers = ['block1_conv2', 'block2_conv2', 'block3_conv4', 'block4_conv4']
 
     style_layer_outputs = []
 
